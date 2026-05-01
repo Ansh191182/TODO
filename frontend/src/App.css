@@ -1,0 +1,230 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.Form{
+  width:350px;
+  padding:40px;
+  border-radius:15px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.15);
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  text-align:center;
+}
+
+.Form h1{
+  color:blueviolet;
+  margin-bottom:10px;
+  font-size:26px;
+  letter-spacing:1px;
+}
+
+.Form input{
+  padding:12px 14px;
+  border-radius:8px;
+  border:none;
+  outline:none;
+  font-size:14px;
+  transition:0.3s;
+}
+
+.Form input:focus{
+  transform:scale(1.03);
+  box-shadow:0 0 8px rgba(0,0,0,0.2);
+}
+
+.Form button{
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:white;
+  color:#333;
+  font-size:16px;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.Form button:hover{
+  background:#222;
+  color:white;
+  transform:scale(1.05);
+}
+
+.ToDo{
+  width:650px;
+  margin:120px auto;
+  padding:30px;
+  background:#ffffff;
+  border-radius:12px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.ToDo h1{
+  text-align:center;
+  margin-bottom:25px;
+  color:#333;
+  letter-spacing:1px;
+}
+
+/* Row Layout */
+.taskRow{
+  display:flex;
+  align-items:center;
+  gap:12px; /* sab elements ke beech gap */
+}
+
+/* Inputs */
+.ToDo input{
+  padding:10px 12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+  outline:none;
+  font-size:14px;
+}
+
+.ToDo input[type="text"]{
+  flex:1;
+}
+
+/* Buttons */
+.ToDo button{
+  padding:10px 16px;
+  border:none;
+  border-radius:6px;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+/* Edit Button (Blue) */
+.editBtn{
+  background:#007bff;
+}
+
+.editBtn:hover{
+  background:#0056b3;
+}
+
+/* Add Button (Green) */
+.addBtn{
+  background:#28a745;
+}
+
+.addBtn:hover{
+  background:#1e7e34;
+}
+
+/* Delete Button (Red) */
+.deleteBtn{
+  background:#dc3545;
+}
+
+.deleteBtn:hover{
+  background:#b02a37;
+}
+
+.todoContainer{
+  width:500px;
+  margin:20px auto;
+  display:flex;
+  gap:15px;
+}
+
+.taskBox{
+  flex:2;
+  background:#4CAF50;
+  color:white;
+  padding:15px;
+  border-radius:8px;
+  font-size:18px;
+  font-weight:600;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.dateBox{
+  flex:1;
+  background:#2196F3;
+  color:white;
+  padding:15px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:500;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.todoContainer:hover{
+  transform:scale(1.02);
+  transition:0.3s;
+}
+.profileIcon{
+  position:fixed;
+  top:20px;
+  right:20px;
+
+  width:40px;
+  height:40px;
+  border-radius:50%;
+
+  background:#007bff;
+  color:white;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-weight:bold;
+  font-size:18px;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.profileIcon:hover{
+  transform:scale(1.1);
+  background:#0056b3;
+}
