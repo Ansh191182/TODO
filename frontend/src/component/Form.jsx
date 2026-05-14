@@ -23,11 +23,14 @@ const Form = () => {
         return toast.error("All fields are required");
       }
 
-      const response = await axios.post("http://localhost:8000/signup", {
-        name,
-        email,
-        password,
-      });
+      const response = await axios.post(
+        "https://todo-task-backend-22xk.onrender.com/signup",
+        {
+          name,
+          email,
+          password,
+        },
+      );
 
       if (response.data) {
         dispatch(userData(response.data));
@@ -70,6 +73,3 @@ const Form = () => {
 };
 
 export default Form;
-
- //password
-todo //name
