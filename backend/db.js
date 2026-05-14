@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-const MONGOURL = "mongodb://localhost:27017/anisha";
+const MONGOURL =
+  "mongodb+srv://todo:NMcETupLYuORuR1n@aysmptotic.8u1l73h.mongodb.net/todo?retryWrites=true&w=majority&appName=Aysmptotic";
 
 const db = async (req, res) => {
   try {
